@@ -19,6 +19,7 @@
 \setlength{\headsep}{0.75 in}
 \setlength{\parindent}{0 in}
 \setlength{\parskip}{0.1 in}
+\usepackage{tikz-dependency}
 
 %
 % ADD PACKAGES here:
@@ -100,21 +101,56 @@
 \newcommand\E{\mathbb{E}}
 
 \begin{document}
-%FILL IN THE RIGHT INFO.
+%FILL IN THE RIGHT INFO.sa
 %\lecture{**LECTURE-NUMBER**}{**DATE**}{**LECTURER**}{**SCRIBE**}
-\tableofcontents 
+
 \lecture{1}{January 21}{Dr. Dipti Misra}{CPG,Intro}
 %\footnotetext{These notes are partially based on those of Nigel Mansell.}
 
 % **** YOUR NOTES GO HERE:
+\subsection{Introduction}
+The Karaka system serves as the basis for description of Panini's Syntax. It is a syntacito-semantic representation of the relations between the verb and the direct participants of the action in the sentence.
+\subsection{Definitions}
+Panini's work is explained, extended, commented and reinterpreted by many authors like kAtyayana, patanjali, bhartrhari and others. This section includes some of the definitions of the ``kAraka".
 
-% Some general latex examples and examples making use of the
-% macros follow.  
-%**** IN GENERAL, BE BRIEF. LONG SCRIBE NOTES, NO MATTER HOW WELL WRITTEN,
-%**** ARE NEVER READ BY ANYBODY.
-This lecture's notes illustrate some uses of
-various \LaTeX\ macros.  
-Take a look at this and imitate.
+\begin{itemize}
+ \item \textbf{Patanjali}, in his Mahabhashya defines ``kAraka" as ``karOti iti" ( ``The one that does" )
+ \item The author of \textbf{kAsika} explains it as being synonymous to ``hEtu" and ``nimitta"  (Cause) - ``kArakam hEtur ity anarthAntaram" ( `` Cause and kArakam are one and the same " )
+ \item \textbf{Bhartrhari} uses the term ``sAdhanam" to specify kAraka as the one capable of establishing action which is given the term ``sAdhya".
+ \item \textbf{NagEsa} defines kAraka as the one that producces the action. 
+\end{itemize}
+
+Therefore, we may say that kAraka is a animate/inanimate, passively/actively involved entity in the acomplishment of an action. The relations between the verb ( ``kriya" ) and the kAraka are of the type visheshaNa - visheshya ( Modifier - Modified ).
+
+There are six kArakas. They are specified below briefly. ( Written as per the order )\\ \\
+\framebox{\vbox{
+  \begin{itemize}
+    \item \textbf{apAdAnam}  :  Defined as ``dhruvam apAye pAdAnam" - The Entity which remains constant when seperation takes place
+    \item \textbf{sampradAnam}  : ``karmaNA yam abhipraiti sa sampradAnam" - Is the entity for which the karma is intended. 
+    \item \textbf{karaNam} :
+    \item \textbf{adhikaraNam} 
+    \item \textbf{karma} 
+    \item \textbf{karta} 
+  \end{itemize}
+}}
+\subsection{Examples}
+Consider the following sentence.
+\begin{center}
+\begin{dependency}[theme = simple]
+   \begin{deptext}[column sep=1em]
+      dEvadattah \& kAshTaih \& sthAlyAm \& tAnDulAn \& pacati \\
+      dEvadatta [NOM] \& with Firewood [INS] \& in the vessel [LOC] \& rice [ACC]  \& cooks \\
+   \end{deptext}
+   \deproot{5}{ROOT}
+   \depedge{5}{1}{karta}
+   \depedge{5}{2}{karaNa}
+   \depedge{5}{3}{dEshAdhikaraNa}
+   \depedge{5}{4}{karma}
+\end{dependency} 
+
+ `` dEvadatta cooks the rice with the firewood in the vessel " \\
+\end{center}
+
 
 \section{Some theorems and stuff} % Don't be this informal in your notes!
 

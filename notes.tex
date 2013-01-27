@@ -20,6 +20,10 @@
 \setlength{\parindent}{0 in}
 \setlength{\parskip}{0.1 in}
 \usepackage{tikz-dependency}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
 
 %
 % ADD PACKAGES here:
@@ -110,7 +114,7 @@
 
 % **** YOUR NOTES GO HERE:
 \subsection{Introduction}
-The Karaka system serves as the basis for description of Panini's Syntax. It is a syntacito-semantic representation of the relations between the verb and the direct participants of the action in the sentence.
+The Karaka system serves as the basis for description of Panini's Syntax. It is a syntacito-semantic representation of the relations between the verb/its derivatives and the direct participants of the action in the sentence.
 \subsection{Definitions}
 Panini's work is explained, extended, commented and reinterpreted by many authors like kAtyayana, patanjali, bhartrhari and others. This section includes some of the definitions of the ``kAraka".
 
@@ -136,6 +140,9 @@ There are six kArakas. They are specified below briefly. ( Written as per the or
 
 \subsection{Examples}
 Consider the following sentence and its respective dependency relations.
+
+\phantomsection
+\hypertarget{fig1}{}
 \begin{center}
 \begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
    \begin{deptext}[column sep=1em]
@@ -145,12 +152,159 @@ Consider the following sentence and its respective dependency relations.
    \deproot{5}{ROOT}
    \depedge{5}{1}{karta}
    \depedge{5}{2}{karaNa}
-   \depedge{5}{3}{dEshAdhikaraNa}
+   \depedge{5}{3}{adhikaraNa}
+   \depedge{5}{4}{karma}
+   
+\end{dependency} 
+
+ ``(1) dEvadatta cooks the rice with the firewood in the vessel " 
+ 
+
+\end{center}
+
+There are four dependency relations in the above sentence. They are karta ( which now, is in the role of Agent ), karma ( which now, acts as the object ), karaNa ( Instrument ), and adhikaraNa ( The location ).
+
+Now, it is the nature of the natural language that it allows its speaker to focus some actors/participants and decrease the relative importance of the others. In that context, the above situation can also be expressed using the following sentence.
+
+\phantomsection
+\hypertarget{fig2}{}
+\begin{center}
+\begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
+   \begin{deptext}[column sep=1em]
+      sthAlI \& tAnDulAn \& pacati \\
+      The vessel [NOM] \& rice [ACC]  \& cooks \\
+   \end{deptext}
+   \deproot{3}{ROOT}
+   \depedge{3}{1}{karta}
+   \depedge{3}{2}{karma}
+   
+\end{dependency} 
+
+ ``(2) The vessel cooks the rice " 
+\end{center}
+In this sentence~\hyperlink{fig2}{(2)}, the speaker emphasizes upon ``sthAli" (the vessel) making it the most independent entity of all other participants in the sentence thus, making it the ``karta", the predominantly important participant in any sentence.
+Here, the vessel is raised to the level of karta in the absence of ``dEvadatta", so as to give importance to the vessel.
+Similarly, any other participants (*) may be raised to the level of karta.
+To Illustrate this, consider the following sentences in Hindi.
+
+\phantomsection
+\hypertarget{fig3}{}
+\begin{center}
+\begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
+   \begin{deptext}[column sep=1em]
+      dEvadatt-ne \& Ag-se \& kaDAi-me \& khAna \& pakAya \\
+      dEvadatta [ERG] \& with Fire [INS] \& in the vessel [LOC] \& food [ACC]  \& cooked \\
+   \end{deptext}
+   \deproot{5}{ROOT}
+   \depedge{5}{1}{karta}
+   \depedge{5}{2}{karaNa}
+   \depedge{5}{3}{adhikaraNa}
    \depedge{5}{4}{karma}
 \end{dependency} 
 
- `` dEvadatta cooks the rice with the firewood in the vessel " \\
+ ``(3) dEvadatta cooked the rice with the fire in the vessel " 
+ 
+
 \end{center}
+
+\phantomsection
+\hypertarget{fig4}{}
+\begin{center}
+\begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
+   \begin{deptext}[column sep=1em]
+      Ag-ne \&  kaDAi-me \& khAna \& pakAya \\
+      The Fire [ERG] \& in the vessel [LOC] \& food [ACC]  \& cooked \\
+   \end{deptext}
+   \deproot{4}{ROOT}
+   \depedge{4}{1}{karta}
+   \depedge{4}{2}{adhikaraNa}
+   \depedge{4}{3}{karma}
+\end{dependency} 
+
+ ``(4) The fire cooked the rice in the vessel " 
+ 
+
+\end{center}
+
+\phantomsection
+\hypertarget{fig5}{}
+\begin{center}
+\begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
+   \begin{deptext}[column sep=1em]
+      kaDai-ne \&  Ag-se \& khAna \& pakAya \\
+      The Vessel [ERG] \& with the fire [INS] \& food [ACC]  \& cooked \\
+   \end{deptext}
+   \deproot{4}{ROOT}
+   \depedge{4}{1}{karta}
+   \depedge{4}{2}{karaNa}
+   \depedge{4}{3}{karma}
+\end{dependency} 
+
+ ``(5) The vessel cooked the rice with the fire " 
+ 
+
+\end{center}
+
+\phantomsection
+\hypertarget{fig6}{}
+\begin{center}
+\begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
+   \begin{deptext}[column sep=1em]
+      khAna \& pak gAya \\
+      The Food [NOM] \& got cooked \\
+   \end{deptext}
+   \deproot{2}{ROOT}
+   \depedge{2}{1}{karta}
+   
+\end{dependency} 
+
+ ``(6) The rice got cooked " 
+ 
+
+\end{center}
+
+\phantomsection
+\hypertarget{fig7}{}
+\begin{center}
+\begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
+   \begin{deptext}[column sep=1em]
+      khAna \& pakAyA gAya \\
+      The Food [NOM] \& has been cooked \\
+   \end{deptext}
+   \deproot{2}{ROOT}
+   \depedge{2}{1}{karma}
+   
+\end{dependency} 
+
+ ``(7) The rice has been cooked " 
+ 
+
+\end{center}
+In the above sentences, we can see that different participants can be elevated to the level of karta if the speker wishes to emphasize on that particular participant and make it indenpendent among the others. 
+At this stage we state that, each action comprises of an ``Activity" and a ``Result". We then define the ``karta" as the locus of the activity and ``karma" as the locus of the result. 
+The accomplishment of an action requires other participants and these are the actors of a series of subactions that complete it. 
+\paragraph{} Therefore, the act of cooking comprises the subactions performed by ``dEvadatt" ( Say, putting the vessel on the fire ), the action performed by the fire ( Heating ), the vessel ( Transmission of the heat) and the food ( Getting cooked ). 
+
+
+\begin{tikzpicture}[grow'=right,level distance=3in,sibling distance=.50in]
+\tikzset{edge from parent/.style= 
+            {thick, draw, edge from parent fork right},
+         every tree node/.style=
+            {draw,minimum width=1in,text width=2in,align=center}}
+\Tree 
+    [. {Cooking} 
+        [.{(A) Action done by ``dEvadatt"} ]
+        [.{(B) Action done by fire} ] 
+        [.{(C) Action done by the vessel} ]
+        [.{(D) Action done by the food} ]
+    ]
+\end{tikzpicture}
+
+\begin{itemize}
+ \item 
+\end{itemize}
+
+From the sentences \hyperlink{fig3}{(3)} and \hyperlink{fig4}{(4)}
 
 
 \section{Some theorems and stuff} % Don't be this informal in your notes!

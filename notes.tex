@@ -20,9 +20,10 @@
 \setlength{\parindent}{0 in}
 \setlength{\parskip}{0.1 in}
 \usepackage{tikz-dependency}
-\usepackage{hyperref}
+\usepackage[colorlinks=true]{hyperref}
 \usepackage{tikz}
 \usepackage{tikz-qtree}
+\usepackage{mdframed}
 
 
 %
@@ -43,9 +44,33 @@
 \renewcommand{\thefigure}{\thelecnum.\arabic{figure}}
 \renewcommand{\thetable}{\thelecnum.\arabic{table}}
 
+
 %
 % The following macro is used to generate the header.
 %
+\mdfdefinestyle{MyFrame}{%
+    linecolor=blue,
+    outerlinewidth=2pt,
+    roundcorner=20pt,
+    innertopmargin=\baselineskip,
+    innerbottommargin=\baselineskip,
+    innerrightmargin=10pt,
+    innerleftmargin=10pt,
+    backgroundcolor=gray!10!white}
+
+\mdfdefinestyle{MyFrame2}{%
+    linecolor=blue,
+    outerlinewidth=2pt,
+    roundcorner=20pt,
+    userdefinedwidth=40em,
+    usetwoside=true,
+    outermargin=9em,
+    innertopmargin=\baselineskip,
+    innerbottommargin=\baselineskip,
+    innerrightmargin=10pt,
+    innerleftmargin=10pt,
+    backgroundcolor=gray!10!white}
+
 \newcommand{\lecture}[4]{
    \pagestyle{myheadings}
    \thispagestyle{plain}
@@ -106,6 +131,7 @@
 
 \begin{document}
 
+
 %FILL IN THE RIGHT INFO.sa
 %\lecture{**LECTURE-NUMBER**}{**DATE**}{**LECTURER**}{**SCRIBE**}
 
@@ -114,6 +140,10 @@
 
 % **** YOUR NOTES GO HERE:
 \subsection{Introduction}
+Panini wrote a computational grammar for the Sanskrit language and a framework in general for modelling language. 
+In his grammar, he builds on the fact that all the words in a sentence are linked and convey information.
+Out of the many relation types, there are the kAraka relations.
+
 The Karaka system serves as the basis for description of Panini's Syntax. It is a syntacito-semantic representation of the relations between the verb/its derivatives and the direct participants of the action in the sentence.
 \subsection{Definitions}
 Panini's work is explained, extended, commented and reinterpreted by many authors like kAtyayana, patanjali, bhartrhari and others. This section includes some of the definitions of the ``kAraka".
@@ -122,7 +152,7 @@ Panini's work is explained, extended, commented and reinterpreted by many author
  \item \textbf{Patanjali}, in his Mahabhashya defines ``kAraka" as ``karOti iti" ( ``The one that does" )
  \item The author of \textbf{kAsika} explains it as being synonymous to ``hEtu" and ``nimitta"  (Cause) - ``kArakam hEtur ity anarthAntaram" ( `` Cause and kArakam are one and the same " )
  \item \textbf{Bhartrhari} uses the term ``sAdhanam" to specify kAraka as the one capable of establishing action which is given the term ``sAdhya".
- \item \textbf{NagEsa} defines kAraka as the one that producces the action. 
+ \item \textbf{NagEsa} defines kAraka as the one that produces the action. 
 \end{itemize}
 
 Therefore, we may say that kAraka is a animate/inanimate, passively/actively involved entity in the acomplishment of an action. The relations between the verb ( ``kriya" ) and the kAraka are of the type visheshaNa - visheshya ( Modifier - Modified ).
@@ -268,6 +298,7 @@ To Illustrate this, consider the following sentences in Hindi.
 \begin{center}
 \begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
    \begin{deptext}[column sep=1em]
+      
       khAna \& pakAyA gAya \\
       The Food [NOM] \& has been cooked \\
    \end{deptext}
@@ -281,11 +312,26 @@ To Illustrate this, consider the following sentences in Hindi.
 
 \end{center}
 In the above sentences, we can see that different participants can be elevated to the level of karta if the speker wishes to emphasize on that particular participant and make it indenpendent among the others. 
-At this stage we state that, each action comprises of an ``Activity" and a ``Result". We then define the ``karta" as the locus of the activity and ``karma" as the locus of the result. 
-The accomplishment of an action requires other participants and these are the actors of a series of subactions that complete it. 
-\paragraph{} Therefore, the act of cooking comprises the subactions performed by ``dEvadatt" ( Say, putting the vessel on the fire ), the action performed by the fire ( Heating ), the vessel ( Transmission of the heat) and the food ( Getting cooked ). 
+At this stage we state that, each action comprises of an ``Activity" and a ``Result" \hyperlink{fig8}{(8)}. We then define the \textbf{``karta" as the locus of the activity} and \textbf{``karma" as the locus of the result}. 
+The accomplishment of an action requires other participants and these are the actors of a series of subactions that complete it \hyperlink{fig9}{(9)}. 
+\\ \\  Therefore, the act of cooking comprises the subactions performed by ``dEvadatt" ( Say, putting the vessel on the fire ), the action performed by the fire ( Heating ), the vessel ( Transmission of the heat) and the food ( Getting cooked ). 
+
 
 \begin{center}
+
+\begin{mdframed}[style=MyFrame2]
+\begin{center}
+
+
+\textbf{karta $\rightarrow$ locus of the activity}, 
+\textbf{karma $\rightarrow$ locus of the result}.
+
+
+\end{center}
+
+\end{mdframed}
+
+
 
 
 \begin{tikzpicture}[level distance=1in,sibling distance=.20in]
@@ -294,15 +340,18 @@ The accomplishment of an action requires other participants and these are the ac
          every tree node/.style=
             {draw,minimum width=1in,text width=2in,align=center}}
 
-
+\hypertarget{fig8}{}
 \Tree 
     [. {Action} 
         [.{Activity} ]
         [.{Result} ]         
     ]
 \end{tikzpicture}
-\end{center}
 
+``(8) Action comprises of an activity and a result."
+
+
+\hypertarget{fig9}{}
 \begin{tikzpicture}[grow'=right,level distance=3in,sibling distance=.50in]
 \tikzset{edge from parent/.style= 
             {thick, draw, edge from parent fork right},
@@ -315,112 +364,46 @@ The accomplishment of an action requires other participants and these are the ac
         [.{(C) Action done by the vessel} ]
         [.{(D) Action done by the food} ]
     ]
-\end{tikzpicture}
+\end{tikzpicture} \\
 
+``(9) Action comprises of multiple subactions."
+\end{center}
+Out of the subactivities, the speaker can choose to emphasize one entity or action over others promoting it to the position of karta in the realized sentence.
 Given this, the verb form may be transformed to represent any of the above activities. So, the sentences \hyperlink{fig3}{(3)},\hyperlink{fig4}{(4)},\hyperlink{fig5}{(5)},\hyperlink{fig6}{(6)} can be explained as follows.
 
+
+*There does seem to be a presence of priority in the
+subactivities of the action in which to promote a
+subactivity it is required to drop some higher priority
+activity.
+Its not necessarily a linear priority, but the subactivity
+we choose transforms as the locus of action and result
+respectively in the realized sentence.
+
+
 \begin{itemize}
- \item 
+ \item In sentence \hyperlink{fig3}{(3)}, the speaker laid most emphasis on devadatt and his action(s) of cooking (Action A in Figure \hyperlink{fig9}{9}).
+ \item In sentence \hyperlink{fig4}{(4)}, the emphasis is on the fire and its action of cooking the rice ( Action B ). We deliberately drop the part of devadatt here so as to promote Ag as the karta.
+ \item In sentence \hyperlink{fig5}{(5)}, the speaker promotes the vessel instead of fire. This denotes the subaction of the vessel ( Action C ). 
+ It is interesting to note that fire is now realized as karana and in the previous sentence, vessel was still realized as adhikarana.
+ \item In sentence \hyperlink{fig6}{(6)}, the speaker focuses on the fact that the rice is cooked ( Action D ). This sentence focuses on the participant ``rice" and the subaction done by it more than anything else. As the locus of this activity and the locus of this result lie in the same entity, karta takes precedence. This sentence is also called as an \textit{``akarmak"} sentence
+ \item Although the sentence \hyperlink{fig7}{(7)} shows only one participant at the surface level, the verb clearly obviates a karta because of its form ``pakA". So, here rice stays as the locus of result, karma.
 \end{itemize}
 
-From the sentences \hyperlink{fig3}{(3)} and \hyperlink{fig4}{(4)}
+\begin{center}
+
+\begin{mdframed}[style=MyFrame]
+
+This selection / emphasis of the actions by the speaker from a set of subactions is vivaksha.(what the speaker chooses/intends/desires/ to express.
+\end{mdframed}
 
 
-\section{Some theorems and stuff} % Don't be this informal in your notes!
 
-We now delve right into the proof.
-
-\begin{lemma}
-This is the first lemma of the lecture.
-\end{lemma}
-
-\begin{proof}
-The proof is by induction on $\ldots$.
-For fun, we throw in a figure.
-%%%NOTE USAGE !
-\fig{1}{1in}{A Fun Figure}
-
-This is the end of the proof, which is marked with a little box.
-\end{proof}
-
-\subsection{A few items of note}
-
-Here is an itemized list:
-\begin{itemize}
-\item this is the first item;
-\item this is the second item.
-\end{itemize}
-
-Here is an enumerated list:
-\begin{enumerate}
-\item this is the first item;
-\item this is the second item.
-\end{enumerate}
-
-Here is an exercise:
-
-{\bf Exercise:}  Show that ${\rm P}\ne{\rm NP}$.
-
-Here is how to define things in the proper mathematical style.
-Let $f_k$ be the $AND-OR$ function, defined by
-
-\[ f_k(x_1, x_2, \ldots, x_{2^k}) = \left\{ \begin{array}{ll}
-
-	x_1 & \mbox{if $k = 0$;} \\
-
-	AND(f_{k-1}(x_1, \ldots, x_{2^{k-1}}),
-	   f_{k-1}(x_{2^{k-1} + 1}, \ldots, x_{2^k}))
-	 & \mbox{if $k$ is even;} \\
-
-	OR(f_{k-1}(x_1, \ldots, x_{2^{k-1}}),
-	   f_{k-1}(x_{2^{k-1} + 1}, \ldots, x_{2^k}))	
-	& \mbox{otherwise.} 
-	\end{array}
-	\right. \]
-
-\begin{theorem}
-This is the first theorem.
-\end{theorem}
-
-\begin{proof}
-This is the proof of the first theorem. We show how to write pseudo-code now.
-%*** USE PSEUDO-CODE ONLY IF IT IS CLEARER THAN AN ENGLISH DESCRIPTION
-
-Consider a comparison between $x$ and~$y$:
-\begin{tabbing}
-\hspace*{.25in} \= \hspace*{.25in} \= \hspace*{.25in} \= \hspace*{.25in} \= \hspace*{.25in} \=\kill
-\>{\bf if} $x$ or $y$ or both are in $S$ {\bf then } \\
-\>\> answer accordingly \\
-\>{\bf else} \\
-\>\>    Make the element with the larger score (say $x$) win the comparison \\
-\>\> {\bf if} $F(x) + F(y) < \frac{n}{t-1}$ {\bf then} \\%
-\>\>\> $F(x) \leftarrow F(x) + F(y)$ \\
-\>\>\> $F(y) \leftarrow 0$ \\
-\>\> {\bf else}  \\
-\>\>\> $S \leftarrow S \cup \{ x \} $ \\
-\>\>\> $r \leftarrow r+1$ \\
-\>\> {\bf endif} \\
-\>{\bf endif} 
-\end{tabbing}
-
-This concludes the proof.
-\end{proof}
+\end{center}
 
 
-\section{Next topic}
 
-Here is a citation, just for fun~\cite{CW87}.
-
-\section*{References}
-\beginrefs
-\bibentry{CW87}{\sc D.~Coppersmith} and {\sc S.~Winograd}, 
-``Matrix multiplication via arithmetic progressions,''
-{\it Proceedings of the 19th ACM Symposium on Theory of Computing},
-1987, pp.~1--6.
-\endrefs
-
-% **** THIS ENDS THE EXAMPLES. DON'T DELETE THE FOLLOWING LINE:
-\lecture{2}{January 21}{Dr. Dipti Misra}{CPG,Intro}
+\lecture{2}{January 28}{Dr. Dipti Misra}{CPG,Intro}
 
 \end{document}
 

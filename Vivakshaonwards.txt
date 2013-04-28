@@ -1,0 +1,35 @@
+In the previous examples, we saw vivakshA in action. VivakshA as we saw is the speaker’s intent. It should be noted that vivaksha is the speaker’s intent thus it may not pertain to reality. The speaker may upgrade a karana to karta i.e. agent in the sub-action chosen even if we know that really it is not - but due to the speaker’s imagination, he can project the instrument that way; and yes the instrument is indeed the agent but we need to reconsider that the focus is on a part of the action.
+
+Language Understanding
+
+Bhartrihari has a theory on what is language composed of and how we understand it. He makes use of concepts like pratibhA to explain language understanding. Evidence of pratibha can be derived from his theory on language information composition.
+
+Where does information reside in a language
+
+Sentence, Bhartrihari postulates. He observes that the whole meaning of a sentence cannot be derived from individual words and ther relations alone. In an example sentence such as “Is there water here?”, the meaning of the sentence is different from the meaning of the individual words i.e. non-compositionality.
+This makes for the interesting question that at what point do we actually get the meaning? He says that sometimes even when the word is not completed, we know which word it is and even when the sentence is not completed, we get the meaning of the sentence. <?>So, I infer that the fact that the meaning resides in the sentence as a whole, does not necessarily mean that the whole sentence is needed to be uttered to get its meaning.<?> It can be agreed that the meaning-understanding is spontaneous - a “flash of understanding”. <?> As far as extending this idea to inter-sentential non-compositionality, I think it would be correct to do so, because the same argument is applicable to that situation also.<?>
+That is where pratibhA comes into play.
+
+PratibhA
+
+Firstly, it is a very elusive concept. It is present in all living beings but in varied forms and quantities. It is an ability. What are its effects? As we saw above, this mysterious ability to understanding the hidden meaning in a sentence. It is the same ability which an expert uses to make an “educated guess”, the “bad feelings” that turn out to be right, etc. One thing common in the effects are that they are not really thought of, they are spontaneous. In that sense, intuition is a part of pratibhA. It is dynamic - we can improve it, it is of different types - the pramanas.
+Part of pratibha (because even if I know how a gun works, I might be a terrible shooter) results or manifests itself in knowledge. <?>Even though it is said that pratibha is dynamic, this knowledge is perhaps not acquired but generated from the pramanas.<?> Bhartrihari calls it “reliable knowledge” as opposed to mere observation which he calls unreliable. <?>I am not clear as how this reliable knowledge relates to a group of people. I can understand why it is reliable “in one’s head” but what about the collective?<?>
+There are the following pramanas of pratibhA:
+1. SvAbhAva - It refers to the nature of a being - waking up, instinctive activities, etc. It is the most rudimentary form of consciousness. <?>It is the reason why we wake up, sleep, etc.<?>
+2. charana - <?> As I understand it, it basically amounts to behaviour related to “spiritual merit”.<?>
+3. abhyAsa - It is practice. The idea is that when we practice enough, we become experts and make those “educated guesses”. At that point part the knowledge to do the work has transformed under pratibhA.
+4. Yoga - <?>On can know what is going on in other people’s minds.<?>
+5. adrsta - <?>Attributes gained from previous lives.<?>
+6. visistophita - Special intuition given by the grace of a special person. <?> Perhaps this is the social component of pratibhA.
+
+Language Analysis
+
+Even though the meaning does not reside in the words, Bhartrihari attributes them as a means to an end (the meaning). He acknowledges the fact that for practical purposes, to analyze language we have to consider words. This division for practical purposes is appodhara. Again, the sentence is not just the composition of relations of isolated word meanings or samsarga, but for analysis of sentence, we need to study samsarga.
+
+Appodhar to Karakas - Notion of sadhana
+
+It can be agreed upon that the sentence “sprouts” with the verb. The objects that we define in the sentence with the verb actually refer to the capacity or power of that object to do the action intended in the sentence. The idea is that the object in the real world cannot explain the the variety of ways it figures in our speech. As mentioned before the sentence realization is not of the real world but of our imagination and perception of it which we want to portray. Bhartrihari considers the object as a substratum of power - only because of which the cation could be performed. <?> what about lies? we imagine the object having power it does not have. Does it mean that the assignment to power is unbounded? How does this relate to metaphors and idioms?<?> Thus follows the distinction between sabdartha and vastavartha - the portrayal of the object by the word and the object itself. This is interesting to think about the power that language wields - it transcends description of reality! <?>This argument can explain sentence like “He imparts power.”. Power does not have power - it is the product of the speaker’s intention.<?> This very phenomenon is vivaksha.
+<?>Another different view is that objects produce their effects though their own nature and they are powers to one another.<?> Each sadhana can be classified into karakas.
+
+The Karakas -
+

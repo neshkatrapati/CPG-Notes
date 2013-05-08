@@ -1,14 +1,20 @@
 \documentclass[a4paper,10pt]{article}
+\usepackage[colorlinks=true]{hyperref}
 \usepackage[utf8x]{inputenc}
 \usepackage{fontspec}
 \usepackage{polyglossia}
 \usepackage{xltxtra} % standard for nearly all XeLaTeX documents
+\usepackage{tikz-dependency}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
 \defaultfontfeatures{Mapping=tex-text} % ditto
 \setmainfont{Gentium}
 \newfontfamily\d[Script=Devanagari]{Lohit Devanagari}
 \usepackage[margin=0.9in]{geometry}
 \setdefaultlanguage{english}
 \setotherlanguage{hindi}
+
 
 %\usepackage[pdftex,bookmarks,colorlinks]{hyperref}
 %\usepackage{epsfig}
@@ -47,6 +53,103 @@
 \newpage
 \section{Introduction to Bhartrihari's Approach}
 % Introduction to Bhartrihari
+
+Bhartrihari introduces the notion of \textit{``power" ({\d शक्ति.})} to explain various phenomenon. 
+According to him, every object is a bundle of powers which correspond to the ability of this object to participate and perform in various actions. 
+We can define the object itself by describing its powers. For example, a lamp has its ability/power to illuminate, a pen has an ability to write,
+a book has both the ability to read from and write into.
+
+\paragraph{} These powers are dynamic, intertwined and complex. Every power manifests itself through a substratum, through one or many concrete objects. 
+These powers, in the form of concrete objects aid as the means in accomplishment of the action. Because the concrete object has the ability/power 
+to accomplish the action, it is called ``{\d साधन्} (means)".
+In accomplishing the action, the object lends a particular power of its own, and acts as the means. So, Bhartrihari postulates that, it is not really the object that is the means but it is its power.
+
+\paragraph{} Consider the sentence, ``{\d चाबी बॆ ताला खॊला }|" which means ``the keys opened the lock". Here, the action is ``opening". 
+There are two concrete objects which are ``the keys" and the ``lock". Following Bhartrihari, the power of the ``keys" is the ``ability to open locks". 
+The power of the ``lock" is the ``the ability to get opened" (It also has ablities like ``Guarding", ``Sealing" etc but, in the context, this applies best). 
+When we look at the original sentence and try to map it to the real world, we will be faced with a severe problem which is, ``keys are inanimate", 
+they cannot open the lock by themselves. But, this sentence applies well in real communication and people use it. When we look at this sentence and say 
+instead of the objects themselves, the powers are the means of accomplishment then, the sentence can be at a vague meta level be represented as 
+`` an object with the ability to open, opened the object which has the ability to be opened". 
+
+\paragraph{} This creates distinction between what Bhartrihari calls as ``sabdhArtha" (Spoken meaning) and ``vAsthavArtha" (Meaning in the real-world). 
+The sentences like above are possible because the speaker of the language is not totally bound by the realities of the world. 
+The speakers' cognitive model is based on the powers of the objects and the resulting sentences are the output of his intention and his cognition.
+
+\paragraph{} These ``{\d साधन्} (means)" are embodied into the sentence as ``{\d कारक } roles" which are described in the previous section. 
+One can see, in various instances the same object being used as different ``{\d कारक }". For example, we have 
+\phantomsection
+\hypertarget{fig1}{}
+
+\begin{center}
+\begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
+   \begin{deptext}[column sep=1em]
+      dEvadatt-ne \& Ag-se \& kaDAi-me \& khAna \& pakAya \\
+      dEvadatta [ERG] \& with Fire [INS] \& in the vessel [LOC] \& food [ACC]  \& cooked \\
+   \end{deptext}
+   \deproot{5}{ROOT}
+   \depedge{5}{1}{karta}
+   \depedge{5}{2}{karaNa}
+   \depedge{5}{3}{adhikaraNa}
+   \depedge{5}{4}{karma}
+\end{dependency} 
+
+ ``(1) dEvadatta cooked the rice with the fire in the vessel " 
+ 
+
+\end{center}
+
+\phantomsection
+\hypertarget{fig2}{}
+
+\begin{center}
+\begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
+   \begin{deptext}[column sep=1em]
+      kaDAi-ne \& khAna \& pakAya \\
+      the vessel [NOM] \& food [ACC]  \& cooked \\
+   \end{deptext}
+   \deproot{3}{ROOT}
+   \depedge{3}{1}{karta}
+   \depedge{3}{2}{karma}
+\end{dependency} 
+
+ ``(2) The vessel cooked the rice " 
+ 
+
+\end{center}
+
+\phantomsection
+\hypertarget{fig1}{}
+
+\begin{center}
+\begin{dependency}[arc edge, arc angle=80, text only label, label style={above}]
+   \begin{deptext}[column sep=1em]
+      dEvadatt-ne \& is kaDAi-ko \& banAya \\
+      dEvadatta [ERG] \& this vessel [ACC]  \& made \\
+   \end{deptext}
+   \deproot{3}{ROOT}
+   \depedge{3}{1}{karta}
+   \depedge{3}{2}{karma}
+\end{dependency} 
+
+ ``(3) dEvadatta made this vessel " 
+ 
+
+\end{center}
+
+\paragraph{} We see that, in the previous three examples, the ``vessel" is used as karta, karma and adhikaraNa. 
+Considering the semantic distinction between the three ``{\d कारक } roles", any concrete object cannot probably undergo changes so dramatic that 
+it becomes the agent once, the object once and an instrument in an other instant. So, here the speaker while shifting the concrete object 
+through all these situations is actually placing the object in the sentence, using it as a substratum for the specific power 
+that is there in this object which applies in the given context. 
+In the first sentence the, speaker focuses on the ``ability to hold food" hence the adhikaraNa kArakA. 
+In the next, he elevates the vessel to a central factor in the act of cooking making it the ``karta".
+Finally, in the last sentence, he focuses on its ``ability to be made". 
+This phenomenon of depicting various real world entities via different kArakAs in different contexts as the speaker intends and sees fit is called ``vivaksha".
+
+\paragraph{} Bhartrihari states that, for a speaker to produce an utterance, the objects in the sentence need not 
+exist in the real world but they merely have to exist as ``objects of cognition" and the sentence is but a manifestation of an ``Internal Reality".
+
 
 
 \section{On KArakAs}

@@ -1,87 +1,28 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Introduction to Panini's Grammar}{5}
-\contentsline {subsection}{\numberline {1.1}The Basic Idea}{6}
-\contentsline {subsection}{\numberline {1.2}Organisation of the Grammar}{6}
-\contentsline {subsection}{\numberline {1.3}Karaka and Vibhakti}{6}
-\contentsline {subsubsection}{\numberline {1.3.1}Karta}{6}
-\contentsline {subsubsection}{\numberline {1.3.2}Karma}{6}
-\contentsline {subsubsection}{\numberline {1.3.3}Karana}{6}
-\contentsline {subsubsection}{\numberline {1.3.4}Apadan}{6}
-\contentsline {subsubsection}{\numberline {1.3.5}Sampradan}{6}
-\contentsline {subsubsection}{\numberline {1.3.6}Adhikaran}{6}
-\contentsline {subsection}{\numberline {1.4}Vivaksha - The Speaker's Intention}{6}
-\contentsline {section}{\numberline {2}Panini's Description of Karakas}{6}
-\contentsline {subsection}{\numberline {2.1}Karta}{6}
-\contentsline {subsubsection}{\numberline {2.1.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {2.1.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {2.1.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {2.2}Karma}{6}
-\contentsline {subsubsection}{\numberline {2.2.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {2.2.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {2.2.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {2.3}Karana}{6}
-\contentsline {subsubsection}{\numberline {2.3.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {2.3.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {2.3.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {2.4}Apadan}{6}
-\contentsline {subsubsection}{\numberline {2.4.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {2.4.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {2.4.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {2.5}Sampradan}{6}
-\contentsline {subsubsection}{\numberline {2.5.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {2.5.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {2.5.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {2.6}Adhikaran}{6}
-\contentsline {subsubsection}{\numberline {2.6.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {2.6.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {2.6.3}Differences from English}{6}
-\contentsline {section}{\numberline {3}Panini's Description of Cases}{6}
-\contentsline {subsection}{\numberline {3.1}1\textsuperscript {st} Case}{6}
-\contentsline {subsubsection}{\numberline {3.1.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {3.1.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {3.1.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {3.2}2\textsuperscript {nd} Case}{6}
-\contentsline {subsubsection}{\numberline {3.2.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {3.2.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {3.2.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {3.3}3\textsuperscript {rd} Case}{6}
-\contentsline {subsubsection}{\numberline {3.3.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {3.3.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {3.3.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {3.4}4\textsuperscript {th} Case}{6}
-\contentsline {subsubsection}{\numberline {3.4.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {3.4.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {3.4.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {3.5}5\textsuperscript {th} Case}{6}
-\contentsline {subsubsection}{\numberline {3.5.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {3.5.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {3.5.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {3.6}6\textsuperscript {th} Case}{6}
-\contentsline {subsubsection}{\numberline {3.6.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {3.6.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {3.6.3}Differences from English}{6}
-\contentsline {subsection}{\numberline {3.7}7\textsuperscript {th} Case}{6}
-\contentsline {subsubsection}{\numberline {3.7.1}Differences from Hindi}{6}
-\contentsline {subsubsection}{\numberline {3.7.2}Differences from Telgu}{6}
-\contentsline {subsubsection}{\numberline {3.7.3}Differences from English}{6}
-\contentsline {section}{\numberline {4}Introduction to Bhartrihari's Explanation}{7}
-\contentsline {subsection}{\numberline {4.1}Bhartrihari on Grammatical Analysis}{7}
-\contentsline {subsection}{\numberline {4.2}The Pramanas and Pratibha}{7}
-\contentsline {subsection}{\numberline {4.3}The Sadhana}{7}
-\contentsline {section}{\numberline {5}Pratibha}{7}
-\contentsline {subsection}{\numberline {5.1}Pramanas - Evidence of Pratibha}{7}
-\contentsline {subsection}{\numberline {5.2}Qualities of Pratibha}{7}
-\contentsline {subsection}{\numberline {5.3}Pratibha and Language}{7}
-\contentsline {section}{\numberline {6}Vivaksha}{7}
-\contentsline {subsection}{\numberline {6.1}The Speaker's Intention}{7}
-\contentsline {subsection}{\numberline {6.2}Vivaksha and Pratibha}{7}
-\contentsline {section}{\numberline {7}Sadhanas}{7}
-\contentsline {subsection}{\numberline {7.1}Bhartrihari's Explanation}{7}
-\contentsline {subsection}{\numberline {7.2}Karta}{7}
-\contentsline {subsection}{\numberline {7.3}Karma}{7}
-\contentsline {subsection}{\numberline {7.4}Karana}{7}
-\contentsline {subsection}{\numberline {7.5}Sampradan}{7}
-\contentsline {subsection}{\numberline {7.6}Apadan}{7}
-\contentsline {subsection}{\numberline {7.7}Adhikarana}{7}
-\contentsline {subsection}{\numberline {7.8}Sesa}{7}
-\contentsline {section}{\numberline {8}Modeling Vivaksha}{7}
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
+\contentsline {section}{\numberline {2}Introduction to Bhartrihari's Approach}{5}{section.2}
+\contentsline {paragraph}{}{5}{section*.2}
+\contentsline {paragraph}{}{5}{section*.3}
+\contentsline {paragraph}{}{5}{section*.4}
+\contentsline {paragraph}{}{5}{section*.5}
+\contentsline {paragraph}{}{6}{section*.9}
+\contentsline {paragraph}{}{6}{section*.10}
+\contentsline {section}{\numberline {3}karta}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Introduction}{7}{subsection.3.1}
+\contentsline {section}{\numberline {4}karma}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Introduction}{8}{subsection.4.1}
+\contentsline {section}{\numberline {5}karaNa}{9}{section.5}
+\contentsline {subsection}{\numberline {5.1}Introduction}{9}{subsection.5.1}
+\contentsline {section}{\numberline {6}sampradAnA}{10}{section.6}
+\contentsline {subsection}{\numberline {6.1}Introduction}{10}{subsection.6.1}
+\contentsline {section}{\numberline {7}apAdAna}{11}{section.7}
+\contentsline {subsection}{\numberline {7.1}Introduction}{11}{subsection.7.1}
+\contentsline {section}{\numberline {8}adhikaraNa}{12}{section.8}
+\contentsline {subsection}{\numberline {8.1}Introduction}{12}{subsection.8.1}
+\contentsline {section}{\numberline {9}The other relations}{13}{section.9}
+\contentsline {subsection}{\numberline {9.1}hEtu}{13}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}tAdarthya}{13}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}sEsa}{13}{subsection.9.3}
+\contentsline {section}{\numberline {10}Pratibha}{13}{section.10}
+\contentsline {section}{\numberline {11}Vivaksha ?}{14}{section.11}
+\contentsline {section}{\numberline {12}Modeling Vivaksha}{15}{section.12}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012/Debian) (format=xelatex 2013.3.17)  8 MAY 2013 17:11
+This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012/Debian) (format=xelatex 2013.4.28)  8 MAY 2013 17:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1092,32 +1092,32 @@ Normal \count register pool exhausted, switching to extended pool.
 . * 'bold italic' with NFSS spec.:
 . <->"Gentium/BI/ICU:mapping=tex-text;"
 .................................................
-\g_fontspec_family_Lohit Devanagari_int=\count281
+\g_fontspec_family_Lohit Hindi_int=\count281
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font Lohit Devanagari/B (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font Lohit Devanagari/I (it probably doesn't exist).
+. Could not resolve font Lohit Hindi/B (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font Lohit Devanagari/BI (it probably doesn't exist).
+. Could not resolve font Lohit Hindi/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Lohit Hindi/BI (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'LohitDevanagari(0)' created for font 'Lohit Devanagari' with
-. options [Mapping=tex-text,Script=Devanagari].
+. Font family 'LohitHindi(0)' created for font 'Lohit Hindi' with options
+. [Mapping=tex-text,Script=Devanagari].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->"Lohit Devanagari/ICU:script=deva;language=DFLT;mapping=tex-text;"
+. <->"Lohit Hindi/ICU:script=deva;language=DFLT;mapping=tex-text;"
 .................................................
 LaTeX Info: Redefining \d on input line 13.
 
@@ -1188,8 +1188,6 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 31.
 LaTeX Info: Redefining \pageref on input line 31.
 LaTeX Info: Redefining \nameref on input line 31.
-
-(./new.out) (./new.out)
 \@outlinefile=\write4
 \openout4 = `new.out'.
 
@@ -1333,9 +1331,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2] [3] [4]
 
-LaTeX Font Warning: Font shape `EU1/LohitDevanagari(0)/m/it' undefined
-(Font)              using `EU1/LohitDevanagari(0)/m/n' instead on input line 57
-.
+LaTeX Font Warning: Font shape `EU1/LohitHindi(0)/m/it' undefined
+(Font)              using `EU1/LohitHindi(0)/m/n' instead on input line 57.
 
 [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
@@ -1351,10 +1348,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
  ) 
 Here is how much of TeX's memory you used:
- 31078 strings out of 495628
- 639376 string characters out of 3184768
- 742780 words of memory out of 3000000
- 33727 multiletter control sequences out of 15000+200000
+ 31066 strings out of 495628
+ 639145 string characters out of 3184768
+ 742655 words of memory out of 3000000
+ 33719 multiletter control sequences out of 15000+200000
  6544 words of font info for 44 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,13n,90p,974b,1118s stack positions out of 5000i,500n,10000p,200000b,50000s

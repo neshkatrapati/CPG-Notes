@@ -26,19 +26,28 @@
 %\setdefaultlanguage{sanskrit}
 
 %opening
+
+%Changes:
+%1. Footnotes done.
+%2. Intro text is complete.
+%3. tex slightly more readable. Did not touch Bhartrihari section.
+%4. Removed confusing stuff.
+%5. Removed uncessary blue text.
+%6. Pinpointed blue text.
+
+%Suggestions:
+%1. The text is boring, lets highlight/bold/underline the important words.
+
 \title{Notes on CPG Class}
 \author{}
 
 \begin{document}
-
 \maketitle
 
 \newpage
-
 \tableofcontents
 
 \newpage
-
 \begin{abstract}
 \color{black!100}
 NEW TEXT\\
@@ -51,22 +60,30 @@ ANSWER / SPECULATION\\
 \color{purple!100}
 EXAMPLE\\
 \color{black!100}
-These notes are written as a deliverable for the Independent Study on Computational Paninian Grammar undertaken by Ganesh Katrapati and Nikhilesh Bhatnagar under the guidance of Prof. Dipti Misra and Sukhada Mam. In the course, we attempt to understand the essence of the concept of karaka in Panini's Sanskrit Grammar by looking at the different sutras for Sanskrit and observing differences in other languages such as Hindi and Telugu. We also study the explanations for the karakas given by P. Subramaniam and Bhartrihari in his Vakyapadiya. Then, we attempt to postulate a computational model for Vivaksha - the speaker's intention.\\
+\paragraph{}These notes are written as a deliverable for the Independent Study on Computational Paninian Grammar undertaken by Ganesh Katrapati and Nikhilesh Bhatnagar under the guidance of Prof. Dipti Misra and Sukhada Mam. In the course, we attempt to understand the essence of the concept of karaka in Panini's Sanskrit Grammar by looking at the different sutras for Sanskrit and observing differences in other languages such as Hindi and Telugu. We also study the explanations for the karakas given by P. Subramaniam and Bhartrihari in his Vakyapadiya. Then, we attempt to postulate a computational model for Vivaksha - the speaker's intention.
 \end{abstract}
+
 \newpage
 \section{Introduction}
-\color{black!100}
-We attempt to understand Panini's approach of analysing language - in particular, the karakas. Panini was a grammarian around 600 BC who formulated a grammar for the Sanskrit language, arguably computational in nature.
+\color{black!100}We attempt to understand Panini's approach of analysing language - in particular, the karakas. Panini was a grammarian around 600 BC who formulated a grammar for the Sanskrit language, arguably computational in nature.
+
 \subsection{Astadhyayi}
-\paragraph{}The Ashtadhyayi contains 3,959 rules(sutras) contained in 8 chapters partitioned in 4 sections(padas) which comprehensively define the usage rules for phonology, morphology, case, karakas and inflections in Sanskrit. The rules for karaka(in ekasamjna:dikara section) are organized with progressively narrower scope in a prioritized default-exception manner(utsarga-apvaada) where rules/exceptions mentioned later have higher priority. It basically means that the rules are distributed in prioritized "packs" corresponding to each karaka (with regard to karakas); when a "pack" is applicable (determined from the rules inside the pack), the pack which is mentioned last is the dominant, thus to resolve ambiguity, we choose the latest "pack". Such mechanism is referred to in the Ashtadyayi as ekasamjna:dikara.
-\subsection{Karaka and Vibhakti}
-\paragraph{}The basic approach depicted in the Ashtadhyayi for analyzing sentence structure is a dependency based approach. \color{blue!100}For sentence analysis, the grammar introduces karakas marked with vibhaktis linked to a verbal element. \color{red!100}What about coordination to form compound sentences? So, what else is there? \color{green!100}Perhaps that's what ccof et al are all about! \color{black!100}Karakas are marked with vibhakti(s) (technically karakavibhakti). \color{blue!100}The karaka is generally a nominal element (noun with modifiers such as adjectives, gender, number marker etc.) - \color{green!100}sometimes it may be the verbal itself!<link> \color{red!100}Can NULL verb ever be a karaka? \color{blue!100}The vibhakti (technically karakavibhakti) is the case marker associated with the karaka. \color{red!100}What exactly is a vibhakti? \color{blue!100}Vibhakti is a case marker. If it is associated with a karaka it is called karakavibhakti, otherwise it is called upapadavibhakti. \color{purple!100}In ram ki kitaab, ki is a upapadavibhakti and in ram ne tir chalaya, ne is karakavibhakti. \color{black!100}Each karaka has to be associated with a verbal element - it can be a verb, \color{blue!100}nominalized verb or primary derivative, or phi even - the NULL verb; its a verb that is not expressed, but is inferred.\paragraph{}\color{black!100}The karakas are syntactico-semantic in nature - \color{blue!100}syntactic because of their relation with verbal elements and vibhakti and semantic because each karaka has a semantic meaning associated to it; \color{red!100}sometimes the semantics may not be so apparent. It might even seem that to account for the given sentence, we may have to loosen the semantics or to increase the vibhaktis associated with the karaka!. \color{black!100}This complexity is reflected in the many to many karaka vibhakti mapping, thus we need defaults and exceptions(utsarga-apvaada).
-\subsection{Interpretation of karaka by different authors}
-\paragraph{} \color{black!100}One thing to note is that the Astadhyayi is quite concise and assumes knowledge of Sanskrit and doesn't go into detailed explanations about its rules; its a listing which just works. Many scholars have provided their explanations of the grammar- Patanjali in Mahabhasya, Bhartrihari in Vakyapadiya,etc. Patanjali points out that since the term karaka is not coined or explicitly explained, thus it is to be interpreted literally i.e. karoti iti - one who does; the author of Kashika interprets karaka as "nimitta" and "hetu" - cause of the action; Nagesha interprets karaka as "one that produces the action"; Bhartrihari in his commentary Vakyapadiya introduces a new term sadhana "the capacity in accomplishing actions" which is introduced below. P.S. Subramaniam infers that since the main rule for each karaka is followed by the dominant case, the karaka represents a partial range of meanings expressed by that case marker. The basic idea is that karakas are entities involved in an action - syntactically and semantically.
 \paragraph{}
-??Applicability of karakas - verb, verb derivative, NULL verbs with examples??
+\color{black!100}The Ashtadhyayi contains 3,959 rules(sutras) contained in 8 chapters partitioned in 4 sections(padas) which comprehensively define the usage rules for phonology, morphology, case, karakas and inflections in Sanskrit. The rules for karaka(in ekasamjna:dikara section) are organized with progressively narrower scope in a prioritized default-exception manner(utsarga-apvaada) where rules/exceptions mentioned later have higher priority. It basically means that the rules are distributed in prioritized "packs" corresponding to each karaka (with regard to karakas); when a "pack" is applicable (determined from the rules inside the pack), the pack which is mentioned last is the dominant, thus to resolve ambiguity, we choose the latest "pack". Such mechanism is referred to in the Ashtadhyayi as ekasamjna:dikara.
+
+\subsection{Karaka and Vibhakti}
+\paragraph{}
+\color{black!100}The basic approach depicted in the Ashtadhyayi for analyzing sentence structure is a dependency based approach. For sentence analysis, the grammar introduces karakas marked with vibhaktis linked to a verbal element\footnote[1]{The sentence will have other non karaka relations too, such as coordination, genitive referred to as ccof and r6 respectively.}. Karakas are marked with vibhakti (technically karakavibhakti). The karaka is generally a nominal element (noun with \color{blue!100}modifiers such as adjectives, gender, number marker etc.\color{black!100}) - sometimes it may be the verbal element itself! \color{red!100}Can NULL verb\footnote[2]{Verb that is not expressed, but is inferred. Put the NULL example here} ever be a karaka? \color{black!100}The vibhakti (technically karakavibhakti) is the case marker associated with the karaka. \color{red!100}Can vibhakti be soething other than case? \color{black!100}Vibhakti is a \color{blue!100}case marker\color{black!100}. If it is associated with a karaka it is called karakavibhakti, otherwise it is called upapadavibhakti. \color{purple!100}In ram ki kitaab, ki is a upapadavibhakti and in ram ne tir chalaya, ne is karakavibhakti. \color{black!100}Each karaka has to be associated with a verbal element - it can be a \color{blue!100}verb, nominalized verb or primary derivative\footnote[3]{Eg - Move(Verb)-Movement(Noun), padhna(verb)-padhai(noun)}, or phi even - the NULL verb.
+
+\paragraph{}
+\color{black!100}The karakas are syntactico-semantic in nature - syntactic because of their relation with verbal elements and vibhakti and semantic because each karaka has a semantic meaning associated to it. However, the many to many karaka-vibhakti mapping makes analysis complicated, thus we need defaults and exceptions(utsarga-apvaada).
+
+\subsection{Interpretation of karaka by different authors}
+\paragraph{}
+\color{black!100}One thing to note is that the Astadhyayi is quite concise and assumes knowledge of Sanskrit and doesn't go into detailed explanations about its rules; its a listing which just works. Many scholars have provided their explanations of the grammar- Patanjali in Mahabhasya, Bhartrihari in Vakyapadiya,etc. Patanjali points out that since the term karaka is not coined or explicitly explained, thus it is to be interpreted literally i.e. karoti iti - one who does; the author of Kashika interprets karaka as "nimitta" and "hetu" - cause of the action; Nagesha interprets karaka as "one that produces the action"; Bhartrihari in his commentary Vakyapadiya introduces a new term sadhana "the capacity in accomplishing actions" which is introduced below. P.S. Subramaniam infers that since the main rule for each karaka is followed by the dominant vibhakti for that karaka, it represents a partial range of meanings expressed by that vibhakti. The basic idea is that karakas are entities involved in an action - syntactically and semantically.
+
+\paragraph{}
 ??is karaka semantic classsification, tell about the balance, possibility of >6 karakas, its all language not semantics, it just happens to be so??
-??what is vibhakti??
 ??Karakas in compound words of noun and nominalized verb??
 \newpage
 \section{Introduction to Bhartrihari's Approach}
